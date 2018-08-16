@@ -1,4 +1,5 @@
-function timeline(collection, options) {
+exports.default = function timeline(collection, options) {
+  console.log('execute timeline');
   const timelines = [];
   const warningLabel = 'Timeline:';
   let winWidth = window.innerWidth;
@@ -421,14 +422,4 @@ function timeline(collection, options) {
       }
     }, 250);
   });
-}
-
-// Register as a jQuery plugin if the jQuery library is present
-if (window.jQuery) {
-  (($) => {
-    $.fn.timeline = function(opts) {
-      timeline(this, opts);
-      return this;
-    };
-  })(window.jQuery);
-}
+};

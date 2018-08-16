@@ -76,3 +76,6 @@ gulp.task('watch', () => {
   gulp.watch('src/images/**', gulp.series('images'));
   gulp.watch('src/js/timeline.js', gulp.series('build-js'));
 });
+
+// Default Task
+gulp.task('default', gulp.parallel('build-js', 'build-css', 'images'));
