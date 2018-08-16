@@ -1,5 +1,4 @@
 node_modules/*
-index.js
 .DS_Store
 index.html
 package-lock.json
